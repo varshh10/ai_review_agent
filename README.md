@@ -46,3 +46,36 @@ Start the Streamlit app:
 streamlit run app.py
 ```
 Enter a review and star rating in the UI to get a response.
+
+##📂 Files Overview
+-main.py : terminal based script that processes app reviews.
+-streamlit_app.py : helped us in building the UI dashboard.
+-ai_response_generator.py : contains the core logic for generating AI responses based on reviews sentiment and FAQ matching.
+- process_reviews.py : script for loading and processing the app reviews.
+## 📦 Dependencies
+- openai
+- pandas
+- streamlit
+- scikit-learn
+- textblob
+- sentence-transformers
+
+### 🧠 Tech Stack
+- **Python** 🐍  
+- **Streamlit** for Web UI  
+- **OpenAI GPT** (via API)  
+- **FAISS** for vector similarity (optional)  
+- **pandas** for data handling  
+
+---
+
+### 🙋‍♀️ FAQ
+### 🙋‍♀️ FAQ
+
+**Q: How does the model find the best FAQ response?**  
+**A:** It uses text similarity (cosine similarity over embeddings) to match the review with the closest question in the FAQ.
+
+**Q: Can I run this without the web UI?**  
+**A:** Yes! Just run `python main.py` from the terminal.
+
+
