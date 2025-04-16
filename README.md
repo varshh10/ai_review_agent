@@ -68,10 +68,7 @@ Enter a review and star rating in the UI to get a response.
 - **pandas** for data handling  
 
 ---
-
 ### 🙋‍♀️ FAQ
-### 🙋‍♀️ FAQ
-
 **Q: How does the model find the best FAQ response?**  
 **A:** It uses text similarity (cosine similarity over embeddings) to match the review with the closest question in the FAQ.
 
